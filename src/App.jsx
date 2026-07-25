@@ -9,7 +9,7 @@ import { kpiData } from "./data/mockData";
 
 export default function App() {
   return (
-    <div className="min-h-screen flex bg-gray-50">
+    <div className="min-h-screen flex flex-col md:flex-row bg-gray-50">
       <Sidebar />
 
       <div className="flex-1 min-w-0">

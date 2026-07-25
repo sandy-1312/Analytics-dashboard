@@ -2,7 +2,6 @@ import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recha
 import { categoryBreakdown, PIE_COLORS } from "../data/mockData";
 import ChartCard from "./ChartCard";
 
-// Pie chart showing what share of sales each product category makes up.
 export default function CategoryPieChart() {
   return (
     <ChartCard title="Sales by Category" subtitle="Share of total revenue">

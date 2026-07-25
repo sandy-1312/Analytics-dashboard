@@ -8,10 +8,6 @@ const statusStyles = {
   Failed: "bg-red-100 text-red-700",
 };
 
-// A fully interactive table: type in the search box to filter by customer
-// name or transaction ID, use the dropdowns to filter by category/status,
-// and click column headers to sort. All logic lives in this one component
-// so it's easy to see how search + filter + sort combine.
 export default function TransactionsTable() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
@@ -36,7 +32,6 @@ export default function TransactionsTable() {
     );
   };
 
-  // Filter, search, then sort — recalculated only when a dependency changes.
   const visibleRows = useMemo(() => {
     let rows = [...transactions];
 
@@ -82,12 +77,11 @@ export default function TransactionsTable() {
   ];
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 min-w-0">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
         <h3 className="font-semibold text-gray-900">Recent Transactions</h3>
 
         <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-          {/* Search box */}
           <div className="relative w-full sm:w-56">
             <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={13} />
             <input
@@ -100,7 +94,6 @@ export default function TransactionsTable() {
           </div>
 
           <div className="flex gap-3">
-            {/* Category filter */}
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
@@ -113,7 +106,6 @@ export default function TransactionsTable() {
               ))}
             </select>
 
-            {/* Status filter */}
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}

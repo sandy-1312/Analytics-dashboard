@@ -9,7 +9,8 @@ html, body {
   width: 100%;
   max-width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f5f6fa;
+  background: linear-gradient(180deg, #f5f7fd 0%, #eef1fb 55%, #eaeffc 100%);
+  background-attachment: fixed;
 }
 
 #root {

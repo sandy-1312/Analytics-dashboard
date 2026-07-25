@@ -26,9 +26,9 @@ export default function TransactionsTable() {
   const sortIcon = (key) => {
     if (sortConfig.key !== key) return <FaSort className="text-gray-300" size={11} />;
     return sortConfig.direction === "asc" ? (
-      <FaSortUp className="text-brand-600" size={11} />
+      <FaSortUp className="text-indigo-600" size={11} />
     ) : (
-      <FaSortDown className="text-brand-600" size={11} />
+      <FaSortDown className="text-indigo-600" size={11} />
     );
   };
 
@@ -89,7 +89,7 @@ export default function TransactionsTable() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search customer or ID..."
-              className="pl-9 pr-3 py-2 text-sm border border-gray-200 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="pl-9 pr-3 py-2 text-sm border border-gray-200 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
@@ -97,7 +97,7 @@ export default function TransactionsTable() {
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="flex-1 sm:flex-none text-sm border border-gray-200 rounded-lg px-2 sm:px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-500 min-w-0"
+              className="flex-1 sm:flex-none text-sm border border-gray-200 rounded-lg px-2 sm:px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 min-w-0"
             >
               {categories.map((c) => (
                 <option key={c} value={c}>
@@ -109,7 +109,7 @@ export default function TransactionsTable() {
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}
-              className="flex-1 sm:flex-none text-sm border border-gray-200 rounded-lg px-2 sm:px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-500 min-w-0"
+              className="flex-1 sm:flex-none text-sm border border-gray-200 rounded-lg px-2 sm:px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 min-w-0"
             >
               {statuses.map((s) => (
                 <option key={s} value={s}>

@@ -10,8 +10,6 @@ import {
 import { monthlyStats } from "../data/mockData";
 import ChartCard from "./ChartCard";
 
-// Line chart showing revenue trend across the year.
-// ResponsiveContainer makes it automatically resize with its parent card.
 export default function RevenueLineChart() {
   return (
     <ChartCard title="Revenue Trend" subtitle="Monthly revenue, in USD">
@@ -24,7 +22,7 @@ export default function RevenueLineChart() {
           <Line
             type="monotone"
             dataKey="revenue"
-            stroke="#4f6bf6"
+            stroke="#6366f1"
             strokeWidth={2.5}
             dot={{ r: 3 }}
             activeDot={{ r: 5 }}

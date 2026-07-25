@@ -1,5 +1,3 @@
-// A reusable wrapper that gives every chart the same white card styling,
-// title, and optional subtitle. `children` is the actual chart component.
 export default function ChartCard({ title, subtitle, children }) {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 sm:p-5 min-w-0">

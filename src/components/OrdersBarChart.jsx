@@ -11,7 +11,6 @@ import {
 import { monthlyStats } from "../data/mockData";
 import ChartCard from "./ChartCard";
 
-// Bar chart comparing new users vs orders per month.
 export default function OrdersBarChart() {
   return (
     <ChartCard title="Users vs Orders" subtitle="New users and orders per month">
@@ -22,8 +21,8 @@ export default function OrdersBarChart() {
           <YAxis tick={{ fontSize: 12 }} />
           <Tooltip />
           <Legend wrapperStyle={{ fontSize: 12 }} />
-          <Bar dataKey="users" fill="#4f6bf6" radius={[4, 4, 0, 0]} name="Users" />
-          <Bar dataKey="orders" fill="#22c55e" radius={[4, 4, 0, 0]} name="Orders" />
+          <Bar dataKey="users" fill="#6366f1" radius={[4, 4, 0, 0]} name="Users" />
+          <Bar dataKey="orders" fill="#10b981" radius={[4, 4, 0, 0]} name="Orders" />
         </BarChart>
       </ResponsiveContainer>
     </ChartCard>

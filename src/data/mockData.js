@@ -26,14 +26,14 @@ export const categoryBreakdown = [
   { name: "Books", value: 900 },
 ];
 
-export const PIE_COLORS = ["#4f6bf6", "#22c55e", "#f59e0b", "#ef4444", "#a855f7"];
+export const PIE_COLORS = ["#6366f1", "#10b981", "#f59e0b", "#f43f5e", "#8b5cf6"];
 
 // KPI summary cards at the top of the dashboard
 export const kpiData = [
-  { id: 1, label: "Total Revenue", value: "$86,400", change: "+12.4%", trend: "up" },
-  { id: 2, label: "Active Users", value: "5,210", change: "+8.1%", trend: "up" },
-  { id: 3, label: "Total Orders", value: "2,381", change: "-2.3%", trend: "down" },
-  { id: 4, label: "Conversion Rate", value: "3.42%", change: "+0.6%", trend: "up" },
+  { id: 1, label: "Total Revenue", value: "$86,400", change: "+12.4%", trend: "up", accent: "indigo" },
+  { id: 2, label: "Active Users", value: "5,210", change: "+8.1%", trend: "up", accent: "emerald" },
+  { id: 3, label: "Total Orders", value: "2,381", change: "-2.3%", trend: "down", accent: "amber" },
+  { id: 4, label: "Conversion Rate", value: "3.42%", change: "+0.6%", trend: "up", accent: "rose" },
 ];
 
 // Table of recent transactions — supports the searching/sorting/filtering feature

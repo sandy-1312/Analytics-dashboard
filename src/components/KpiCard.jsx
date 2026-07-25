@@ -1,7 +1,5 @@
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
-// A single KPI stat card, e.g. "Total Revenue: $86,400 (+12.4%)".
-// `trend` is either "up" or "down" and controls the color/icon.
 export default function KpiCard({ label, value, change, trend }) {
   const isUp = trend === "up";
 

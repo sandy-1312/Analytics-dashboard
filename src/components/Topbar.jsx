@@ -1,9 +1,5 @@
 import { FaUserCircle, FaBell } from "react-icons/fa";
 
-// Header shown above the dashboard content — page title on the left,
-// notification bell and user avatar on the right.
-// Now visible on ALL screen sizes (it used to be hidden below "md",
-// which meant phones never saw a page title at all).
 export default function Topbar() {
   return (
     <div className="flex items-center justify-between gap-3 px-4 sm:px-6 md:px-8 py-4 md:py-5">
